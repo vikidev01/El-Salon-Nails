@@ -18,9 +18,11 @@
 <body>
     <header id="inicio">
         <nav class="navegador">
+            <img class="logo" src="/imag/ppal.jpg" alt="Logo" id="logo">
             <div class="container-header">
-                <img class="logo" src="/imag/ppal.jpg" alt="Logo" id="logo">
-                <i class="fas fa-bars icon-menu"></i>
+                
+                <label for="change"><i class="fas fa-bars icon-menu"></i></label>
+                <input type="checkbox" class="change" id="change">
                 <ul class="menu">
                     
                     <li><a class="nav-a" href="#cursos">Cursos</a></li>
@@ -38,7 +40,7 @@
         <hr>
         <div class="iniciob">
             <div class="belleza">
-                <h2 class=" ini">La belleza en tus manos</h2>
+                <h2 class=" ini">La belleza en tus manos...</h2>
             </div>
             <div class="imagen-belleza">
                 <img src="/imag/pixlrresult.png" alt="La belleza en tus manos">
@@ -101,11 +103,11 @@
                     <div class="container-form">
                         <form>
                             <div class="container-input">
-                                <label for="usuario">Usuario</label>
+                                <label class="labels" for="usuario">Usuario</label>
                                 <input type="text" id="usuario" placeholder="Ingrese su usuario">
                             </div>
                             <div class="container-input">
-                                <label for="password">Contraseña</label>
+                                <label for="password" class="labels">Contraseña</label>
                                 <input type="password" id="password" placeholder="Ingrese su password">
                             </div>
                             <button class="in">Ingresar</button>
@@ -120,7 +122,7 @@
                     <div class="container-form">
                         <form>
                             <div class="container-input">
-                                <label for="name">Nombre</label>
+                                <label for="name" class="labels">Nombre</label>
                                 <input type="text" id="name" placeholder="Ingrese su nombre">
                             </div>
                             <div class="container-input">
@@ -128,7 +130,7 @@
                                 <input type="text" id="email" placeholder="Ingrese su e-mail">
                             </div>
                             <div class="container-input">
-                                <label for="password">Contraseña</label>
+                                <label for="password" class="labels">Contraseña</label>
                                 <input type="password" id="password" placeholder="Ingrese su password">
                             </div>
                             <button class="in">Registrarse</button>

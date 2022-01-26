@@ -158,7 +158,11 @@ form {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+}
 .container-input {
     margin: 5px 0px;
     display: flex;
@@ -167,7 +171,7 @@ form {
     width: 100%;
 }
 
-label {
+.labels {
     color: #FFF;
     margin-bottom: 5px;
     width: 70%;
@@ -209,8 +213,23 @@ input {
     
 }
 /*------------------ MEDIA QUERIS ------------------*/
+.change{
+    display: none;
+}
 @media (max-width: 700px){
-    
+    .imagen-del-logo{
+        width: 100%;
+    }
+    .container-header{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    .change:checked ~ .container-header{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
     .menu{
         display:none;
     }
@@ -225,6 +244,10 @@ input {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .ini{
+        
+        width: 60%;
     }
     .imagen-belleza{
         width: 100%;
@@ -248,7 +271,10 @@ input {
     .container-form {
         width: 80%;
     }
-    label {
+    label{
+        width: 10%;
+    }
+    .labels {
         color: #FFF;
         margin-bottom: 5px;
         width: 80%;
@@ -275,6 +301,20 @@ input {
         width: 50%;
         border-radius: 25px;
     }
-   
+   .change:checked ~ ul{
+        display: inline-block!important;
+   }
+   .change:checked ~ .menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    }
+    .change:checked ~ .registro{
+        display: flex;
+        justify-content: space-around;
+        width: 65%;
+    
+    }
+  
 }
 
