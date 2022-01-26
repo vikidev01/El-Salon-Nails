@@ -85,40 +85,6 @@ ul{
     color: black;
     display: none!important;
  }
-/*------------------ MENU HAMBURGUESA ------------------*/
-@media (max-width: 700px){
-    .menu{
-        display:none;
-    }
-    .registro{
-        display: none;
-    }
-    .icon-menu{
-        display: inline-block!important;
-    }
-    .iniciob{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .imagen-belleza{
-        width: 100%;
-        justify-content: flex-end;
-    }
-    .c-cursos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .list-contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-}
-
 
 
 /*------------------ SECCIÓN CURSOS ------------------*/
@@ -131,7 +97,6 @@ ul{
     width: 13rem;
 }
 div.gallery{
-    margin-left: 2rem;
     border: 1px solid #ccc;
     float: left;
     width: 13rem;
@@ -243,3 +208,73 @@ input {
     align-items: center;
     
 }
+/*------------------ MEDIA QUERIS ------------------*/
+@media (max-width: 700px){
+    
+    .menu{
+        display:none;
+    }
+    .registro{
+        display: none;
+    }
+    .icon-menu{
+        display: inline-block!important;
+    }
+    .iniciob{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagen-belleza{
+        width: 100%;
+        justify-content: flex-end;
+    }
+    .c-cursos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .list-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .recuadro-login {
+        width: 80%;
+      
+    }
+    .container-form {
+        width: 80%;
+    }
+    label {
+        color: #FFF;
+        margin-bottom: 5px;
+        width: 80%;
+    }
+    
+    input {
+        width: 80%;
+        border-radius: 20px;
+        height: 40px;
+        border: none;
+        padding: 0 20px;
+    }
+    
+    .in {
+      
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        font-size: 16px;
+        margin-top: 20px;
+        background-color: rgb(46,153,222);
+        color: white;
+        border: none;
+        height: 45px;
+        width: 50%;
+        border-radius: 25px;
+    }
+   
+}
+
